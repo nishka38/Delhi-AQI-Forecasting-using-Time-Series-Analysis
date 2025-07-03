@@ -1,43 +1,58 @@
-# Delhi-AQI-Forecasting-using-Time-Series-Analysis
-This project aims to analyze and forecast the Air Quality Index (AQI) of Delhi using both Time Series and Machine Learning models. 
+# Delhi AQI Forecasting Project
 
- **Overview**
- 
-**Dataset** : Daily AQI data for Delhi (Attached in file)
+This project aims to analyze and forecast the Air Quality Index (AQI) of Delhi using both Time Series and Machine Learning models. The goal is to understand air pollution trends and predict future AQI levels for better environmental planning and health awareness.
 
+---
 
-**Models Used:**
+## 📌 Overview
 
-SARIMA (Seasonal ARIMA)
+- 📅 **Dataset**: Daily AQI data for Delhi (2015–2020)
+- 🧠 **Models Used**:
+  - SARIMA (Seasonal ARIMA)
+  - Random Forest Regressor
+  - Gradient Boosting Regressor
+  - Gradient Boosting with GridSearchCV (Tuned Model)
+- 🎯 **Goal**: Forecast AQI levels and evaluate the performance of different predictive models
 
-Random Forest Regressor
+---
 
-Gradient Boosting Regressor
+## 📊 AQI Over Time
 
-Gradient Boosting with GridSearchCV (Tuned Model)
+Visualizing AQI trends in Delhi from 2015 to 2020:
 
- **Goal**: Forecast AQI levels and evaluate the performance of different predictive models
+![Delhi AQI Over Time](/Delhi-AQI-Forecasting-TimeSeries/aqi_timeseries.png)
 
-** Results**
+---
 
-All models performed well, with Gradient Boosting showing the highest predictive power.
+## ⏱️ Time Series Forecasting (SARIMA)
 
-SARIMA effectively modeled seasonal trends in AQI for short-term forecasting.
+Forecasting the next 30 days of AQI using SARIMA:
 
+![SARIMA Forecast](/Delhi-AQI-Forecasting-TimeSeries/delhi_aqi_forecast.png)
 
+---
 
-**Tools & Libraries**
+## 🤖 Machine Learning Model Comparison
 
-Python
+Comparing performance of various ML models using R² scores:
 
-Pandas
+![Model Comparison](/Delhi-AQI-Forecasting-TimeSeries/model_comparison.png)
 
-NumPy
+---
 
-Matplotlib
+## 📈 Results
 
-Seaborn
+- All models performed well, with **Gradient Boosting** showing the highest predictive power.
+- **SARIMA** effectively modeled seasonal trends in AQI for short-term forecasting.
 
-Scikit-learn
-statsmodels (SARIMA)
-Jupyter Notebook
+---
+
+## 🛠️ Tools & Libraries
+
+- Python  
+- Pandas, NumPy  
+- Matplotlib, Seaborn  
+- Scikit-learn  
+- statsmodels (SARIMA)  
+- Jupyter Notebook  
+
